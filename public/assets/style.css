@@ -1,0 +1,184 @@
+html, header, body {
+    margin: 0px;
+    padding: 0px;
+   }
+  
+  .nav-link{
+      background-color: #151348;
+      color: white;
+      font-family:  'Raleway', sans-serif;
+      font-weight: bold;
+      box-shadow: none;
+      font-size: 100%;
+  }
+  
+  .section-me{
+    color: #FFBF00;
+    font-family:  'Raleway', sans-serif;
+    font-size: 65px;
+  }
+  
+  .subtile{
+    color: #FFBF00;
+    font-family:  'Raleway', sans-serif;
+    font-size: 23px;
+  }
+  
+  .wrapper{
+    display: table;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .content{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    text-shadow: 1px 1px 1px black;
+  }
+  
+  .img-background {
+    background-image: url("https://i.postimg.cc/3JPjfXgK/nasa-Q1p7bh3-SHj8-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+      
+  }
+  
+  .presentation-section {
+    text-align: center;
+    vertical-align: middle;
+    text-shadow: 1px 1px 1px black;
+    background-color: #151348;
+    }
+  
+  .section-description{
+    align-self: center;
+    vertical-align: middle;
+  }
+  
+  .description{
+    text-align: justify;
+    vertical-align: middle;
+    color: white;
+    font-family:  'Raleway', sans-serif;
+    font-size: 22px;
+  }
+  
+  .section-picture{
+    align-items: center;
+    vertical-align: middle;
+    align-self: center;
+  }
+  
+  .size-picture{
+      width: 75%;
+      align-items: center;
+    }
+  
+    /*-----project------*/
+  
+  .title-project{
+    text-align: center;
+    vertical-align: middle;
+    color: #FFBF00;
+    font-family:  'Raleway', sans-serif;
+    font-size: 65px;
+    }
+  
+   /*-----cards------*/
+  
+  .color-button{
+      background-color: #FFBF00;
+      color: #150941;
+      border: #150941;
+  }
+  
+  .border{
+    border: none;
+    background-color: black;
+  }
+  
+  .cards-img{
+    width: 100%;
+  }
+  
+  .more-color{
+    background-color: black;
+  }
+  
+  .card-project{
+    background-color: #150941;
+  }
+  
+   /*-----modal------*/
+  
+  .color-header-modal{
+    background-color: #150941;
+    color: white;
+    font-family:  'Raleway', sans-serif;
+  }
+  
+  .close-color{
+    background-color: red;
+    color: white;
+    border: none;
+  }
+  
+  .color-body-modal{
+    text-align: justify;
+    vertical-align: middle;
+    font-family:  'Raleway', sans-serif;
+  }
+  
+  .color-footer-modal{
+    background-color: #150941;
+    color: white;
+    font-family:  'Raleway', sans-serif;
+  }
+  
+  .color-button-close{
+    background-color: #FFBF00;
+    color: #151348;
+    border: none;
+  }
+  
+  
+  /*-----contact-----*/
+  
+  .contact-section{
+    color: #FFBF00;
+    background-color: #151348;
+    font-family:  'Raleway', sans-serif;
+    font-weight: bold;
+    box-shadow: none;
+    font-size: 23px;
+  }
+  
+  .contact{
+    text-align: center;
+    vertical-align: middle;
+    color: #FFBF00;
+    font-family:  'Raleway', sans-serif;
+    font-size: 30px;
+  }
+  
+  .contact-perso{
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    font-family:  'Raleway', sans-serif;
+  }
+  
+   .contact-btn{
+    font-family:  'Raleway', sans-serif;
+    font-weight: 400;
+    box-shadow: none;
+    font-size: 30px;
+   }
+  
+   .link-contact{
+     size:60px
+   }
