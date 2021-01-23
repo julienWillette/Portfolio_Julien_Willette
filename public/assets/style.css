@@ -2,14 +2,27 @@ html, header, body {
     margin: 0px;
     padding: 0px;
    }
+
+  .color-navbar{
+    background-color: #151348;
+  }
   
   .nav-link{
-      background-color: #151348;
       color: white;
       font-family:  'Raleway', sans-serif;
       font-weight: bold;
       box-shadow: none;
       font-size: 100%;
+  }
+
+  .img-background-presentation {
+    background-image: url("https://i.postimg.cc/3JPjfXgK/nasa-Q1p7bh3-SHj8-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 600px;  
   }
   
   .section-me{
@@ -43,8 +56,7 @@ html, header, body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    background-size: cover;
-      
+    background-size: cover;  
   }
   
   .presentation-section {
@@ -175,8 +187,12 @@ html, header, body {
    .contact-btn{
     font-family:  'Raleway', sans-serif;
     font-weight: 400;
-    box-shadow: none;
     font-size: 30px;
+    color: white;
+   }
+
+   .contact-btn:hover{
+    color: #FFBF00;
    }
   
    .link-contact{
