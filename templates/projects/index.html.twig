@@ -1,0 +1,99 @@
+{% extends 'base.html.twig' %}
+{% block title %}Projects{% endblock %}
+{% block body %}
+<div class="img-background-presentation">
+    <div class="wrapper">
+        <div class="content">
+            <h1 class="section-me">Bonjour, je suis Julien</h1>
+            <p class="subtile">Bienvenue sur mon portfolio !</p>
+        </div>
+    </div>
+</div>
+<div class="container-fluid presentation-section" id="Présentation">
+    <div class="container presentation-section">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-3 mt-3 mb-3 section-picture">
+                <img src="https://i.postimg.cc/jjdWmKp4/Julien.png" class="rounded-circle size-picture"
+                    alt="Photo Julien Willette">
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-3 mt-3 mb-3 section-description">
+                <p class="description"> Actuellement en reconversion professionnelle.
+                    J'ai suivi une formation de 5 mois spécialisée en PHP.
+                    Je souhaite à présent approfondir mes connaissances en JS en intégrant une
+                    formation professionnelle d'un an spécialisée en Node, Js, React.
+                    Je suis à la recherche d'une entreprise en alternance pouvant travailler en PHP et/ou en JS.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid img-background" style="background-image: url('https://i.postimg.cc/QVGRRpFH/guillermo-ferla-Oze6-U2m1o-YU-unsplash.jpg')">
+<div class="container">
+    <h1 class=" pt-5 title-project" id="Projets"> Mes projets</h1>
+    <div class="row justify-content-around">
+        {% for project in projects %}
+        <div class="col-xl-5 col-lg-6 col-md-6 col-sm-11 mt-5 mb-5 mx-auto">
+            <div class="card border">
+                <img src="{{ project.picture }}" data-toggle="modal"
+                data-target="#modal-{{project.id}}" class="card-img-top img-fluid" alt="{{ project.name }}">
+                
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+</div>
+{% for project in projects %}
+<div class="modal fade" id="modal-{{project.id}}" tabindex="-1" aria-labelledby="modal-{{project.id}}"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header color-header-modal">
+                <h2 class="modal-title testimony-title">{{ project.name }}</h2>
+                <button type="button" class="close close-color" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body color-body-modal">
+                <p class="color-body-modal">{{ project.description|striptags }}</p>
+                <hr>
+                <div class="row">
+                    {% for techno in project.techno %}
+                    <div class="col-auto">
+                        <p class="color-body-modal"><span class="badge rounded-pill bg-warning text-dark">{{ techno.name }}</span></p>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="modal-footer color-footer-modal justify-content-around">
+                {% if project.url is not empty %}
+                <a href="{{ project.url }}" class="btn btn-primary color-button">Lien du site</a>
+                {% endif %}
+                {% if project.urlGitHub is not empty %}
+                <a href="{{ project.urlGitHub }}" class="btn btn-primary color-button">Lien Git Hub</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
+
+<div class="contact-section" id="Contact">
+    <br>
+    <br>
+    <div class="container-fluid">
+        <div class="row">
+            <h2 class="title-project">Contact</h2>
+            <p class="contact-perso">julien.willette@me.com</p>
+            <p class="contact-perso">06 81 59 29 88</p>
+            <section class="contact">
+                <a href="https://www.linkedin.com/in/julien-willette-2939561b6/" class="contact-btn"
+                    target="_blank"><i class="fab fa-linkedin link-contact"></i></a>
+                <a href="https://github.com/julienWillette" class="contact-btn" target="_blank"><i class="fab fa-github-square link-contact"></i></a>
+                <a href="https://drive.google.com/file/d/1KSHsCOd7BY6porV_040mNmCqwkW6Yn_J/view?usp=sharing" class="contact-btn" target="_blank"><i class="far fa-address-card link-contact"></i></a>
+            </section>
+        </div>
+    </div>
+    <br>
+    <br>
+</div>
+{% endblock %}
