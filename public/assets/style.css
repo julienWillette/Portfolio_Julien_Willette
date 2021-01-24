@@ -115,18 +115,17 @@ html, header, body {
   .border{
     border: none;
     background-color: black;
+    overflow: hidden;
   }
   
   .cards-img{
     width: 100%;
+    transition: 2s;
   }
-  
-  .more-color{
-    background-color: black;
-  }
-  
-  .card-project{
-    background-color: #150941;
+
+  .cards-img:hover{
+    transform: scale(1.1);
+    
   }
   
    /*-----modal------*/
