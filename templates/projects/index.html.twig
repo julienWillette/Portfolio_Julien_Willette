@@ -22,6 +22,12 @@
                     Je souhaite à présent approfondir mes connaissances en JS en intégrant une
                     formation professionnelle d'un an spécialisée en Node, Js, React.
                     Je suis à la recherche d'une entreprise en alternance pouvant travailler en PHP et/ou en JS.</p>
+                    <section class=" p_3 contact">
+                        <a href="https://www.linkedin.com/in/julien-willette-2939561b6/" class="contact-btn"
+                            target="_blank"><i class="fab fa-linkedin link-contact"></i></a>
+                        <a href="https://github.com/julienWillette" class="contact-btn" target="_blank"><i class="fab fa-github-square link-contact"></i></a>
+                        <a href="https://drive.google.com/file/d/1KSHsCOd7BY6porV_040mNmCqwkW6Yn_J/view?usp=sharing" class="contact-btn" target="_blank"><i class="far fa-address-card link-contact"></i></a>
+                    </section>
             </div>
         </div>
     </div>
@@ -31,11 +37,10 @@
     <h1 class=" pt-5 title-project" id="Projets"> Mes projets</h1>
     <div class="row justify-content-around">
         {% for project in projects %}
-        <div class="col-xl-5 col-lg-6 col-md-6 col-sm-11 mt-5 mb-5 mx-auto">
+        <div class="col-xl-5 col-lg-6 col-md-6 col-sm-11 mt-5 mb-5 mx-auto color-card">
             <div class="card border">
                 <img src="{{ project.picture }}" data-toggle="modal"
-                data-target="#modal-{{project.id}}" class="card-img-top img-fluid" alt="{{ project.name }}">
-                
+                    data-target="#modal-{{project.id}}" class="card-img-top img-fluid cards-img" alt="{{ project.name }}">
             </div>
         </div>
         {% endfor %}
