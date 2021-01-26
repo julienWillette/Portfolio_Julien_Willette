@@ -88,8 +88,10 @@
     <div class="container-fluid">
         <div class="row">
             <h2 class="title-project">Contact</h2>
-            {{ form_start(contact)}}
-            {{ form_end(contact)}}
+            {{ form_start(contactForm)}}
+            <button class="nav-link" type="submit"><i class="far fa-paper-plane"></i>
+                            {{button_label|default('Envoyer') }}</button>
+            {{ form_end(contactForm)}}
             <section class="contact">
                 <a href="https://www.linkedin.com/in/julien-willette-2939561b6/" class="contact-btn"
                     target="_blank"><i class="fab fa-linkedin link-contact"></i></a>

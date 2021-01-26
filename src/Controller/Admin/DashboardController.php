@@ -2,6 +2,7 @@
 
 namespace App\Controller\Admin;
 
+use App\Entity\Contact;
 use App\Entity\Technos;
 use App\Entity\Projects;
 use Symfony\Component\HttpFoundation\Response;
@@ -36,6 +37,7 @@ class DashboardController extends AbstractDashboardController
         yield MenuItem::linktoDashboard('Dashboard', 'fa fa-home');
         yield MenuItem::linkToCrud('Projets', 'far fa-actor', Projects::class);
         yield MenuItem::linkToCrud('Technos', 'far fa-actor', Technos::class);
+        yield MenuItem::linkToCrud('Contact', 'far fa-list', Contact::class);
         // yield MenuItem::linkToCrud('The Label', 'fas fa-list', EntityClass::class);
     }
 }
