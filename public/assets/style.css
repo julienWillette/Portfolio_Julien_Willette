@@ -121,6 +121,7 @@ html, header, body {
   .cards-img{
     width: 100%;
     transition: 2s;
+    cursor: pointer;
   }
 
   .cards-img:hover{
