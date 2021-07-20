@@ -71,10 +71,10 @@
             </div>
             <div class="modal-footer color-footer-modal justify-content-around">
                 {% if project.url is not empty %}
-                <a href="{{ project.url }}" class="btn btn-primary color-button">Lien du site</a>
+                <a href="{{ project.url }}" target="_blank" class="btn btn-primary color-button">Lien du site</a>
                 {% endif %}
                 {% if project.urlGitHub is not empty %}
-                <a href="{{ project.urlGitHub }}" class="btn btn-primary color-button">Lien Git Hub</a>
+                <a href="{{ project.urlGitHub }}" target="_blank" class="btn btn-primary color-button">Lien Git Hub</a>
                 {% endif %}
             </div>
         </div>
